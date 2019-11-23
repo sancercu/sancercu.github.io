@@ -66,41 +66,23 @@ export class HomePageComponent implements OnInit {
 
   public images = [
     {
-      image: '../../../../../assets/images/nosotros.jpg'
+      image: '../../../../../assets/images/viajes5.jpg'
     },
     {
-      image: '../../../../../assets/images/nosotros.jpg'
+      image: '../../../../../assets/images/viajes.jpg'
     },
     {
-      image: '../../../../../assets/images/nosotros.jpg'
+      image: '../../../../../assets/images/viajes2.jpg'
     },
     {
-      image: '../../../../../assets/images/nosotros.jpg'
+      image: '../../../../../assets/images/viajes3.jpg'
     },
     {
-      image: '../../../../../assets/images/nosotros.jpg'
+      image: '../../../../../assets/images/viajes4.jpg'
     },
     {
-      image: '../../../../../assets/images/nosotros.jpg'
+      image: '../../../../../assets/images/viajes6.jpg'
     },
-    {
-      image: '../../../../../assets/images/nosotros.jpg'
-    },
-    {
-      image: '../../../../../assets/images/nosotros.jpg'
-    },
-    {
-      image: '../../../../../assets/images/nosotros.jpg'
-    },
-    {
-      image: '../../../../../assets/images/nosotros..jpg'
-    },
-    {
-      image: '../../../../../assets/images/nosotros..jpg'
-    },
-    {
-      image: '../../../../../assets/images/nosotros..jpg'
-    }
   ];
 
 

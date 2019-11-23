@@ -1,12 +1,19 @@
 .headerPage {
   height: 400px;
-  background: url(../../../../../assets/images/nosotros.jpg) no-repeat;
+  background: url(../../../../../assets/images/viajes5.jpg) no-repeat;
   background-position: 50% 60%;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  .layoutBg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.12);
+    padding: 40px 0;
+    backdrop-filter: blur(.5px);
+  }
   .contentInfo {
     h1 {
       color: #fff;

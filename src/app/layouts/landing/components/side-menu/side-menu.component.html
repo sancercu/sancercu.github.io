@@ -11,7 +11,7 @@
             <!-- Comprobantes -->
             <a [routerLink]="['/planes']" class="itemSideNav" routerLinkActive="active">
                 <div class="contentTitleSide">
-                    <p class="titleItem">Planes</p>
+                    <p class="titleItem">Imágenes</p>
                 </div>
             </a>
 
@@ -19,20 +19,6 @@
             <a class="itemSideNav" routerLink="/contacto" (click)="toggleOpened()" routerLinkActive="active">
                 <div class="contentTitleSide">
                     <p class="titleItem">Contacto</p>
-                </div>
-            </a>
-
-            <!-- Ayuda -->
-            <a href="https://ayuda.tufacturadigital.com.ar/" target="_blank" class="itemSideNav">
-                <div class="contentTitleSide">
-                    <p class="titleItem">Ayuda</p>
-                </div>
-            </a>
-
-            <!-- Comprobantes -->
-            <a [routerLink]="['/comprobantes/lista']" *ngIf="authService.isAuthenticated()" class="itemSideNav">
-                <div class="contentTitleSide">
-                    <p class="titleItem">Mis comprobantes</p>
                 </div>
             </a>
 
