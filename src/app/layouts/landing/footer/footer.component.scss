@@ -1,0 +1,28 @@
+.copyright {
+  padding: 20px 0;
+  border-top: 1px solid rgba(98, 98, 98, 0.07);
+  box-shadow: none!important;
+  color: #626262;
+  background: #fff;
+  .nameEnterprise {
+    font-weight: 500;
+    margin-right: 3px;
+  }
+  p {
+    margin: 0px;
+  }
+  .links {
+    color: #3a8fc8;
+    outline: 0 !important;
+    text-decoration: none;
+    &:hover {
+      color: #48b0f7;
+    }
+  }
+  @media (max-width: 575px) {
+    .text-right,
+    .text-left {
+      text-align: center !important;
+    }
+  }
+}

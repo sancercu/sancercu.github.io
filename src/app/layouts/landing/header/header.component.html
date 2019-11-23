@@ -1,0 +1,30 @@
+<div class="header" [class.sticky]="sticky">
+    <div class="container">
+        <div class="form-row d-flex align-items-center" style="justify-content: space-between;">
+            <div class="col-auto">
+                <div class="contentLogoMenu">
+                    <p class="logo" [routerLink]="['/']">
+                        FluirXelMundo
+                        <!-- <span class="d-none d-sm-inline">| fluir por el mundo</span> -->
+                    </p>
+                </div>
+            </div>
+            <div class="col-auto">
+                <ul class="d-none d-lg-inline menu">
+                    <li routerLinkActive="active">
+                        <a [routerLink]="['/imagenes']">Imágenes</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a [routerLink]="['/contacto']">Contacto</a>
+                    </li>
+                </ul>
+                <div class="wrapper-menu d-flex d-lg-none" [class.open]="toggleMenu" (click)="toggle()"
+                    (click)="toggleMenu = !toggleMenu">
+                    <div class="line-menu half end"></div>
+                    <div class="line-menu"></div>
+                    <div class="line-menu halfLong end"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

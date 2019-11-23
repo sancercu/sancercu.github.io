@@ -1,0 +1,41 @@
+<div [class.expand]="opened">
+    <div class="expandLayer" (click)="toggleOpened()"></div>
+    <nav class="sideBar navbar-light">
+        <div class="closeMenu">
+            <div class="btn btn-link">
+                <i class="fa fa-times" (click)="toggleOpened()"></i>
+            </div>
+        </div>
+        <div class="contentNav">
+
+            <!-- Comprobantes -->
+            <a [routerLink]="['/planes']" class="itemSideNav" routerLinkActive="active">
+                <div class="contentTitleSide">
+                    <p class="titleItem">Planes</p>
+                </div>
+            </a>
+
+            <!-- Contacto -->
+            <a class="itemSideNav" routerLink="/contacto" (click)="toggleOpened()" routerLinkActive="active">
+                <div class="contentTitleSide">
+                    <p class="titleItem">Contacto</p>
+                </div>
+            </a>
+
+            <!-- Ayuda -->
+            <a href="https://ayuda.tufacturadigital.com.ar/" target="_blank" class="itemSideNav">
+                <div class="contentTitleSide">
+                    <p class="titleItem">Ayuda</p>
+                </div>
+            </a>
+
+            <!-- Comprobantes -->
+            <a [routerLink]="['/comprobantes/lista']" *ngIf="authService.isAuthenticated()" class="itemSideNav">
+                <div class="contentTitleSide">
+                    <p class="titleItem">Mis comprobantes</p>
+                </div>
+            </a>
+
+        </div>
+    </nav>
+</div>

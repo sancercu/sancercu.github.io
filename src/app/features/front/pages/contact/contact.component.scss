@@ -1,0 +1,114 @@
+.headerPage {
+  height: 400px;
+  background: url(../../../../../assets/images/nosotros.jpg) no-repeat;
+  background-position: 50% 60%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .contentInfo {
+    h1 {
+      color: #fff;
+      font-weight: 300;
+      font-size: 44px;
+    }
+    h3 {
+      color: #fff;
+      font-weight: 300;
+      font-size: 24px;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.contactContain {
+  padding: 70px 16px 30px;
+  background: #f6f9fa;
+  //   background: #fff;
+  @media (max-width: 575px) {
+    padding: 50px 0px;
+  }
+  h3 {
+    color: #3c4858;
+    font-weight: 300;
+    @media (max-width: 1400px) {
+      font-size: 33px;
+    }
+  }
+  p {
+    color: #505a69;
+    font-weight: 300;
+    a {
+      color: #3a8fc8;
+      &:hover {
+        color: #48b0f7;
+      }
+    }
+  }
+}
+
+.ownBtn {
+  background: rgba(167, 149, 245, 0.1);
+  color: #4d3a9f;
+  &:hover {
+    background: #4d3a9f;
+    color: #fff;
+  }
+}
+
+.btnSend {
+  @media (max-width: 575px) {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+}
+
+::placeholder {
+  //   color: #979aa7;
+  color: #c0ccda;
+  font-weight: 100;
+}
+
+.cardDefault {
+  min-height: 200px;
+  text-align: center;
+  margin-bottom: 20px;
+  background: #fff;
+  box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 30px;
+  box-sizing: border-box;
+  -webkit-transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h4 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #3d415b;
+  }
+  p {
+    margin: 0px;
+    color: #3d415b;
+    font-weight: 100;
+    a {
+      color: #3a8fc8;
+      &:hover {
+        text-decoration: none;
+        color: #48b0f7;
+      }
+    }
+  }
+}
