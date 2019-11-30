@@ -3,7 +3,9 @@
     <div class="container-fluid">
       <div class="form-row">
         <div class="col-sm-10 offset-sm-1 col-12 text-center">
-          <h1 class="titleHeaderMain"><b>Our journey</b> has begun!</h1>
+          <ngx-typed-js [strings]="['begun!', 'start!']" [loop]="true" [typeSpeed]="126">
+            <h1 class="titleHeaderMain"><b>Our journey</b> has <span class="typing"></span></h1>
+          </ngx-typed-js>
           <h3 class="subtitleHeaderMain">
             Together to the infinity and beyond
           </h3>
@@ -23,124 +25,53 @@
   </swiper>
 </div>
 
-<!-- <section class="sectionBanner">
-  <div class="container-fluid">
-    <div>
-      <h5 class="hint-text smallSubtitle">oncloud mode</h5>
-      <div class="row">
-        <div class="col-sm-5 col-md-4">
-          <h1 class="bannerTitle">Facturá estés donde estés.</h1>
-        </div>
-        <div class="col-sm-7 col-md-8 no-padding">
-          <div>
-            <p class="bannerDescription mb-1">
-              Con nuestro facturador web, podés generar tus comprobantes donde
-              quieras y desde cualquier dispositivo conectado a internet. Si...
-              Accedés a todas las funciones que provee la plataforma desde
-              el celu, la compu o la tablet.
-            </p>
-            <a class="hint-text small bannerLink" [routerLink]="['/register']">¿No tenés cuenta? Creá una ahora.</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="sectionBanner2">
-  <div class="container-fluid">
+  <div class="container">
     <div class="form-row">
       <div class="col-12 col-sm-8 offset-sm-2 text-center">
         <h1 class="bannerTitle">Emitir comprobantes nunca fue tan simple</h1>
-        <p class="bannerDescription">
-          En tan solo 3 pasos ya podés empezar a generar tus comprantes de
-          manera digital, personalizada y desde donde quieras.
-        </p>
       </div>
     </div>
-    <div class="form-row separationBanner2">
+    <div class="row separationBanner2">
       <div class="col-12 col-md-4">
-        <div class="contentOption">
-          <img src="../../../../../assets/images/front/user.svg" alt="Registro" />
-          <h4>1. CREAR USUARIO</h4>
+        <div class="contentOptionTravels">
+          <a href="" class="contentImg">
+            <img src="../../../../../assets/images/viajes4.jpg" alt="">
+          </a>
+          <a href="" class="linkViaje">Lorem ipsun dolor sit amet</a>
           <p>
-            Registrate gratis para crear una cuenta. Sólo necesitas validar tu
-            email.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate placeat provident suscipit veritatis
+            fuga culpa. Dolores necessitatibus obcaecati accusamus quae eos ut quas, officia dolorum autem sunt, eaque
+            ratione nesciunt[…]
           </p>
-          <a [routerLink]="['/register']">Registrarme</a>
         </div>
         <div class="divider d-block d-md-none"></div>
       </div>
       <div class="col-12 col-md-4">
-        <div class="contentOption">
-          <img src="../../../../../assets/images/front/link.svg" alt="Ayuda" />
-          <h4>2. VINCULAR CON LA AFIP</h4>
+        <div class="contentOptionTravels">
+          <a href="" class="contentImg">
+            <img src="../../../../../assets/images/viajes3.jpg" alt="">
+          </a>
+          <a href="" class="linkViaje">Lorem ipsun dolor sit amet</a>
           <p>
-            Realizá el paso a paso correspondiente para vincular tfd con la
-            AFIP.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate placeat provident suscipit veritatis
+            fuga culpa. Dolores necessitatibus obcaecati accusamus quae eos ut quas, officia dolorum autem sunt, eaque
+            ratione nesciunt[…]
           </p>
-          <a href="https://ayuda.tufacturadigital.com.ar/documentación/primeros-pasos/cargar-certificado"
-            target="_blank">Ver el tutorial</a>
         </div>
         <div class="divider d-block d-md-none"></div>
       </div>
       <div class="col-12 col-md-4">
-        <div class="contentOption">
-          <img src="../../../../../assets/images/front/generate.svg" alt="Ingresar" />
-          <h4>3. GENERAR COMPROBANTES</h4>
+        <div class="contentOptionTravels">
+          <a href="" class="contentImg">
+            <img src="../../../../../assets/images/viajes2.jpg" alt="">
+          </a>
+          <a href="" class="linkViaje">Lorem ipsun dolor sit amet</a>
           <p>
-            Todo listo! Ahora disfrutá la comodidad de generar comprobantes
-            desde donde estés.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate placeat provident suscipit veritatis
+            fuga culpa. Dolores necessitatibus obcaecati accusamus quae eos ut quas, officia dolorum autem sunt, eaque
+            ratione nesciunt[…]
           </p>
-          <a [routerLink]="['/login']">Ingresar a tfd</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sectionBanner3">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-md-5">
-        <h1 class="bannerTitle">Sin vueltas</h1>
-        <p class="bannerDescription">
-          Pensado para gente como vos. Con pantallas claras y las funciones al
-          alcance de la mano. Evitamos lo molesto que puede ser crear una
-          factura.
-        </p>
-        <small class="hint-text">
-          Gestión y emisión de comprobantes electrónicos
-        </small>
-      </div>
-      <div class="col-12 col-md-7">
-        <div class="contentPhone">
-          <img src="../../../../../assets/images/front/halfMobileFront.jpg" alt="Listado de comprobantes emitidos" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sectionBanner4">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="bannerTitle">
-          ¿Trabajás en un estudio contable? ¿sos contador?
-        </h1>
-        <p class="bannerDescription">
-          Con <b>tfd</b> podés manejar múltiples contribuyentes con una sola
-          cuenta. ¿Querés más? Con la función de "compartir emisor", diferentes
-          usuarios pueden emitir comprobantes de un mismo contribuyente. Posta
-          que te hacemos la vida más simple. Esto es la gloria.
-        </p>
-      </div>
-      <div class="col-12">
-        <div class="contentBrowser">
-          <img class="d-none d-md-inline" src="../../../../../assets/images/front/browserFront.jpg" alt="" />
-          <img class="d-inline d-md-none" src="../../../../../assets/images/front/browserFrontMobile.jpg"
-            alt="Compartir emisor" />
         </div>
       </div>
     </div>
@@ -149,117 +80,15 @@
 
 <section class="bannerCallToAction">
   <div class="layoutBg">
-    <div class="container-fluid" style="padding: 30px 0;">
+    <div class="container-fluid">
       <div class="text-center">
-        <h2>Te presentamos una manera
-          <span class="bold" id="spin"></span>
-          de generar tus comprobantes
-        </h2>
+        <ngx-typed-js [strings]="['begun!', 'start!']" [loop]="true" [typeSpeed]="126">
+          <h1 class="titleHeaderMain"><b>Our journey</b> has <span class="typing"></span></h1>
+        </ngx-typed-js>
         <p style="font-weight: 100;">
-          Ahorrá tiempo de gestión. Sacate preocupaciones de la cabeza ¿Querés hacernos una consulta?</p>
-        <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
         <a class="btn btnLanding" routerlink="/contacto" href="/contacto">Contactanos</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sectionBanner5">
-  <div class="container-fluid">
-    <div class="row d-none d-md-inline d-lg-none">
-      <div class="col-12 m-b-40">
-        <h2 class="bannerTitle">
-          Tranquilo. Focalizate en tus proyectos. Nosotros nos ocupamos de la
-          facturación
-        </h2>
-        <p class="bannerDescription">
-          Ahorrate tiempo. Gracias a su interfaz intuitiva podés facturar de
-          forma segura sin altos conocimientos contables ni capacitaciones
-          técnicas
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-4 col-12">
-        <div class="deviceMorph">
-          <img src="../../../../../assets/images/front/mobileCompleteFront.jpg" alt="" />
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-7 offset-lg-1 col-12 centerMd">
-        <div class="d-block d-md-none d-lg-block">
-          <h2 class="bannerTitle">
-            Tranquilo. Focalizate en tus proyectos. Nosotros nos ocupamos de la
-            facturación
-          </h2>
-          <p class="bannerDescription">
-            Ahorrate tiempo. Gracias a su interfaz intuitiva podés facturar de
-            forma segura sin altos conocimientos contables ni capacitaciones
-            técnicas
-          </p>
-        </div>
-        <div class="col-lg-9 offset-lg-1 col-12 deletPadding">
-          <div class="infoOptions" style="padding-top: 20px;">
-            <dl>
-              <dt>100% cloud</dt>
-              <dd>
-                Gestioná el contenido desde y donde quieras. Evitá la perdida de
-                información con tfd tenés un respaldo de todas tus facturas
-                emitidas.
-              </dd>
-            </dl>
-            <dl>
-              <dt>Personalización</dt>
-              <dd>
-                Gracias a nuestra variedad de plantillas, podés elegir distintos
-                diseños y agregar tu logotipo al comprobante.
-              </dd>
-            </dl>
-            <dl>
-              <dt>Historial y Agenda</dt>
-              <dd>
-                Disponé de toda tu facturación a la vista. Buscá por filtros,
-                por cliente. Agendá sus datos para evitar demoras en la próxima
-                factura.
-              </dd>
-            </dl>
-            <dl>
-              <dt>Compartir Emisor</dt>
-              <dd>
-                La característica ideal si más de un usuario se ocupa de la
-                facturación de una empresa. ¿Otra buena? dale acceso a tu
-                contador. Él mismo podrá acceder y realizar el reporte mensual
-                de IIBB.
-              </dd>
-            </dl>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sectionBanner6">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 col-md-6 pb80">
-        <h5 class="hint-text smallSubtitle">Multiples diseños</h5>
-        <h1 class="bannerTitle">
-          Sacá el profesional que hay en vos y lucí ese logo canchero en todas
-          tus facturas
-        </h1>
-        <p class="bannerDescription">
-          Disfrutá de las diferentes plantillas que tenemos en tfd para que
-          puedas personalizar tus comprobantes
-        </p>
-        <a [routerLink]="['/register']" class="btn ownBtnPrimary">Crear cuenta</a>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="contentPhone">
-          <img class="d-none d-md-inline" alt="invoiceDesignb"
-            src="../../../../../assets/images/front/invoiceDesignb.png" />
-          <img class="d-inline d-md-none" alt="invoiceDesign2"
-            src="../../../../../assets/images/front/invoiceDesign2.png" />
-        </div>
       </div>
     </div>
   </div>
@@ -268,7 +97,7 @@
 <section class="bannerComments">
   <swiper [config]="configComments">
     <div *ngFor="let comment of comments">
-      <div class="container-fluid text-center">
+      <div class="container text-center">
         <div class="row align-items-center">
           <div class="col-sm-10 offset-sm-1 col-12">
             <div class="contentComment" style="background: #fff;">
@@ -284,7 +113,7 @@
   </swiper>
 </section>
 
-<a href="https://api.whatsapp.com/send?phone=5492262414829&amp;#&amp;text=Hola quiero hacerles una consulta"
+<!-- <a href="https://api.whatsapp.com/send?phone=5492262414829&amp;#&amp;text=Hola quiero hacerles una consulta"
   title="Consultanos por Whatsapp" target="_blank" class="whatsappFancy">
   <i class="fab fa-whatsapp"></i>
 </a> -->

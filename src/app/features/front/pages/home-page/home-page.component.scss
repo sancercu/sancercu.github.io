@@ -6,7 +6,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.12);
     padding: 40px 0;
-    backdrop-filter: blur(.5px);
+    backdrop-filter: blur(0.5px);
   }
   .contentLayer {
     z-index: 9;
@@ -171,9 +171,44 @@
     }
   }
   .separationBanner2 {
-    padding-top: 85px;
+    padding-top: 35px;
     @media (max-width: 575px) {
       padding-top: 40px;
+    }
+    .contentOptionTravels {
+      .contentImg {
+        border-radius: 4px;
+        max-height: 200px;
+        width: 100%;
+        background: #fefefe;
+        overflow: hidden;
+        vertical-align: middle;
+        display: inline-block;
+        margin-bottom: 15px;
+        img {
+          height: 100%;
+          max-height: 100%;
+          width: 100%;
+        }
+      }
+      a.linkViaje {
+        color: #3c4858;
+        font-weight: 300;
+        font-size: 23px;
+        line-height: 35px;
+        letter-spacing: 0px;
+        &:hover{
+          color: red;
+          text-decoration: none;
+        }
+      }
+      p {
+        margin-top: 10px;
+        color: #505a69;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0px;
+      }
     }
   }
   .divider {
@@ -212,60 +247,6 @@
   }
 }
 
-.sectionBanner3 {
-  background: #f9fbfd;
-  padding: 85px 0;
-  @media (max-width: 768px) {
-    text-align: center;
-  }
-  .bannerDescription {
-    color: #505a69;
-    font-weight: 300;
-  }
-  .bannerTitle {
-    color: #3c4858;
-    font-weight: 300;
-    @media (max-width: 1400px) {
-      font-size: 33px;
-    }
-  }
-  .contentPhone {
-    height: 260px;
-    text-align: center;
-    margin-bottom: -25px;
-    img {
-      max-width: 334px;
-    }
-    @media (max-width: 768px) {
-      margin-top: 20px;
-    }
-  }
-}
-
-.sectionBanner4 {
-  text-align: center;
-  background: #fff;
-  padding: 85px 0 0;
-  .bannerDescription {
-    color: #505a69;
-    font-weight: 300;
-  }
-  .bannerTitle {
-    color: #3c4858;
-    font-weight: 300;
-    @media (max-width: 1400px) {
-      font-size: 33px;
-    }
-  }
-  .contentBrowser {
-    text-align: center;
-    img {
-      margin-top: 20px;
-      max-width: 100%;
-    }
-  }
-}
-
 .bannerCallToAction {
   width: 100%;
   height: 100%;
@@ -278,9 +259,8 @@
     background: rgba(0, 0, 0, 0.2);
     padding: 40px 0;
     backdrop-filter: blur(2px);
-    h2 {
+    h1 {
       color: #fff;
-      font-size: 2rem;
       font-weight: 300;
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
       @media (max-width: 1400px) {
@@ -293,135 +273,7 @@
     p {
       color: #fff;
       font-weight: 300;
-      margin-bottom: 1rem;
-    }
-  }
-}
-
-#spin {
-  color: #fff;
-  font-weight: 600;
-}
-#spin:after {
-  content: '';
-  animation: spin 6s linear infinite;
-}
-@keyframes spin {
-  0% {
-    content: 'canchera';
-  }
-  33% {
-    content: 'fácil';
-  }
-  66% {
-    content: 'bonita';
-  }
-  100% {
-    content: 'canchera';
-  }
-}
-
-.sectionBanner5 {
-  background: #fff;
-  // background: #fafafa;
-  padding: 85px 0;
-  .centerMd {
-    @media (max-width: 991px) {
-      display: grid;
-      align-items: center;
-    }
-  }
-  .deletPadding {
-    @media (max-width: 991px) {
-      padding-left: 0px !important;
-      padding-right: 0px !important;
-    }
-  }
-  .bannerDescription {
-    color: #505a69;
-    font-weight: 300;
-  }
-  .bannerTitle {
-    color: #3c4858;
-    font-weight: 300;
-    @media (max-width: 1400px) {
-      font-size: 33px;
-    }
-    @media (max-width: 768px) {
-      margin-top: 30px;
-    }
-  }
-  .deviceMorph {
-    text-align: center;
-    img {
-      width: 100%;
-      max-width: 300px;
-    }
-  }
-  .infoOptions {
-    dt {
-      font-weight: 600;
-      color: #3c4858;
-    }
-    dd {
-      color: #505a69;
-      font-weight: 300;
-    }
-  }
-}
-
-.sectionBanner6 {
-  background: #f9fbfd;
-  padding: 85px 0 0;
-  @media (max-width: 768px) {
-    text-align: center;
-  }
-  .pb80 {
-    padding-bottom: 80px;
-    @media (max-width: 768px) {
-      padding-bottom: 20px;
-    }
-  }
-  .smallSubtitle {
-    color: #506690;
-    font-weight: 600;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-  }
-  .bannerDescription {
-    color: #505a69;
-    font-weight: 300;
-  }
-  .bannerTitle {
-    color: #3c4858;
-    font-weight: 300;
-    @media (max-width: 1400px) {
-      font-size: 33px;
-    }
-  }
-  .contentPhone {
-    height: 100%;
-    text-align: center;
-    align-items: flex-end;
-    justify-content: flex-end;
-    display: inline-flex;
-    img {
-      max-width: 100%;
-    }
-  }
-  .ownBtnPrimary {
-    text-align: center;
-    letter-spacing: 0.01785714em;
-    font-family: 'ubuntu';
-    font-size: 0.875rem;
-    // line-height: 1.25rem;
-    font-weight: 500;
-    background: rgba(167, 149, 245, 0.1);
-    color: #4d3a9f !important;
-    &:hover {
-      background: #4d3a9f;
-      color: #fff !important;
+      margin-bottom: 0.5rem;
     }
   }
 }

@@ -31,36 +31,21 @@ export class HomePageComponent implements OnInit {
 
   public comments = [
     {
-      user: 'Loana Martínez',
-      userType: 'Emprendedora',
+      user: 'Juliana Matos',
+      userType: 'Viajera',
       comment:
-        'Anulación automáticas de comprobantes en un sólo botón! eso si es la gloriaaa.'
-    },
-    {
-      user: 'Julian Mateos',
-      userType: 'Emprendedor',
-      comment:
-        'Gracias gracias gracias... definitivamente le ponen onda y simpleza a un garronazo'
-    },
-    {
-      user: 'PY Consultores',
-      userType: 'Estudio contable',
-      comment:
-        'Revisar la cartera de monotrinutistas con tfd nos ahorró horas de trabajo. Evitamos errores y nos agiliza las tareas cotidianas.'
+        'Gracias gracias gracias... Me gustaría poder encontrarlos por la ahí'
     },
     {
       user: 'Javier Rodriguez',
-      userType: 'Emprendedor',
-      comment: [
-        'Con tfd puedo emitir facturas con el logo de mi empresa y enviársela a mis clientes por email.',
-        'Hace poco comencé mi emprendimiento, y mis facturas están a la altura de una gran empresa.'
-      ].join(' ')
+      userType: 'Emprendedor y Viajero',
+      comment: 'Ustedes son todo lo que está bien!. Saludos desde Nueva Zelanda  ',
     },
     {
       user: 'Jimena Ruiz',
       userType: 'Emprendedora',
       comment:
-        'Me encantan los diseños de las facturas!!! mi logo se aprecia en cada comprobante.'
+        'Me encantan los viajes q realizaron. Las fotos son increibles!'
     }
   ];
 

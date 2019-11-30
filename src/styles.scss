@@ -1,25 +1,12 @@
 body {
   background: #f6f9fa;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0px;
   padding: 0px;
 }
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-.contentPage {
-  height: 100%;
-  // max-height: calc(100vh);
-  overflow-x: hidden;
-  position: relative;
-  overflow-y: scroll;
-}
-.contentScroll {
-  min-height: calc(100vh - 140px);
-  // min-height: calc(100vh - 60px);
-  position: relative;
 }
 
 .hint-text {
@@ -37,8 +24,6 @@ body {
     border-color: rgb(90, 76, 150) !important;
   }
 }
-
-
 
 .btnCancelar {
   color: #5d5d61;
@@ -64,7 +49,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "ubuntu";
+  font-family: 'ubuntu';
   .modal-title {
     color: #3d415b;
     font-size: 0.9375rem;
@@ -86,10 +71,10 @@ body {
   }
 }
 .modal-body {
-  font-family: "ubuntu";
+  font-family: 'ubuntu';
 }
 .modal-footer {
-  font-family: "ubuntu";
+  font-family: 'ubuntu';
   border-top: 1px solid #edf2f9;
   border-radius: 0px;
 }
@@ -122,7 +107,7 @@ body {
   color: #3c4858;
   font-size: 0.875rem;
   font-weight: 400;
-  font-family: "ubuntu";
+  font-family: 'ubuntu';
 }
 
 textarea {
@@ -149,7 +134,6 @@ textarea {
   height: calc(1.5em + 0.5rem + 2px) !important;
 }
 
-
 .card {
   color: #3d425b;
   position: relative;
@@ -164,7 +148,7 @@ textarea {
   margin-bottom: 1.5rem;
   border-color: #edf2f9;
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
-  font-weight: "ubuntu";
+  font-weight: 'ubuntu';
   .card-header {
     padding: 1rem 1.5rem;
     margin-bottom: 0;
@@ -179,71 +163,6 @@ textarea {
     padding-bottom: 0.5rem;
     border-radius: calc(0.5rem - 1px) calc(0.5rem - 1px) 0 0;
   }
-}
-
-.ownTable.table {
-  margin-bottom: 0px;
-  border-bottom: 0px !important;
-  thead {
-    th {
-      background-color: #f9fbfd;
-      font-weight: 600;
-      color: #95aac9;
-      // border-bottom: 1px solid #edf2f9;
-      border-bottom: none;
-      border-top: 1px solid #edf2f9;
-      font-size: 0.825rem;
-    }
-  }
-  tbody {
-    tr {
-      td {
-        color: #5d5d61;
-        font-style: italic;
-        font-weight: 400;
-        padding: 0.9375rem;
-        font-size: 0.85rem;
-        border-top: 1px solid #edf2f9;
-        vertical-align: middle;
-      }
-    }
-  }
-}
-.dropdown-toggle::after {
-  display: none;
-}
-
-.ownTable thead th:first-child,
-.ownTable tbody td:first-child {
-  padding-left: 1.5rem !important;
-}
-.ownTable thead th:last-child,
-.ownTable tbody td:last-child {
-  padding-right: 1.5rem !important;
-}
-
-.table-responsive {
-  // overflow-x: inherit !important;
-  .dropTable {
-    svg {
-      opacity: 0.4;
-      transition: all 0.2s linear;
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
-}
-
-.invoiceDot {
-  position: absolute;
-  right: -9px;
-  top: 3px;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  display: inline-block;
-  background-color: #e6e6e6;
 }
 
 .canInvoiceDot {
@@ -275,7 +194,7 @@ textarea {
 }
 
 .txtHint {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   margin-right: 10px;
   font-size: 0.9rem;
   font-weight: 100;
@@ -357,4 +276,67 @@ textarea {
 .badgeLight {
   background: #f5f6f8;
   color: #4f5f79 !important;
+}
+
+.swiper-slide {
+  overflow: initial !important;
+}
+
+.s-wrapper.swiper.swiper-container.swiper-container-initialized.swiper-container-horizontal {
+  overflow: initial !important;
+  .swiper-wrapper {
+    overflow: initial !important;
+  }
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0px !important;
+}
+.swiper-wrapper {
+  padding-bottom: 40px !important;
+  padding-top: 40px !important;
+}
+.headerMainFront {
+  .swiper-wrapper {
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+  }
+}
+
+swiper
+  > .swiper.s-wrapper
+  .swiper-pagination
+  .swiper-pagination-handle
+  .swiper-pagination-bullet.swiper-pagination-bullet-last,
+swiper
+  > .swiper.s-wrapper
+  .swiper-pagination
+  .swiper-pagination-handle
+  .swiper-pagination-bullet.swiper-pagination-bullet-first {
+  border: 0px !important;
+}
+
+swiper > .swiper.s-wrapper .swiper-pagination .swiper-pagination-handle .swiper-pagination-bullet {
+  transition: all 0.1s linear;
+  width: 6px;
+  height: 6px;
+  border-radius: 100px !important;
+}
+
+swiper > .swiper.s-wrapper .swiper-pagination .swiper-pagination-handle .swiper-pagination-bullet-active {
+  background: #6d5cae !important;
+  width: 30px !important;
+}
+
+swiper
+  > .swiper.s-wrapper.swiper-container-horizontal
+  > .swiper-pagination
+  .swiper-pagination-handle
+  .swiper-pagination-bullet.swiper-pagination-bullet-last,
+swiper
+  > .swiper.s-wrapper.swiper-container-horizontal
+  > .swiper-pagination
+  .swiper-pagination-handle
+  .swiper-pagination-bullet.swiper-pagination-bullet-first {
+  margin: 0px !important;
 }
